@@ -11,9 +11,15 @@ html {
   font-size: 94%;
 }
 
-@media (min-width: 568px) {
+@media (min-width: 600px) {
   html {
-    font-size: 60%;
+    font-size: 65%;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 1000px) {
+  html {
+    font-size: 100%;
   }
 }
 
@@ -148,9 +154,15 @@ a {
   place-items: center;
 }
 
-@media (min-width: 568px) {
+@media (min-width: 600px) {
   .main {
     padding: 0;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 1000px) {
+  .main {
+    padding: 3rem 0;
   }
 }
 
@@ -159,10 +171,16 @@ a {
   margin: 0 auto;
 }
 
-@media (min-width: 568px) {
+@media (min-width: 600px) {
   .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (min-height: 1000px) {
+  .container {
+    display: block;
   }
 }
 /*# sourceMappingURL=main.css.map */
