@@ -1,0 +1,105 @@
+.container {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card-1 {
+  background-color: $bright-orange;
+  animation: slide-right 0.8s linear;
+
+  @keyframes slide-right {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .btn {
+    color: $bright-orange;
+  }
+}
+
+.card-2 {
+  background-color: $dark-cyan;
+  animation: slide-down 0.8s linear;
+
+  @keyframes slide-down {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+  .btn {
+    color: $dark-cyan;
+  }
+}
+
+.card-3 {
+  background-color: $very-dark-cyan;
+  animation: slide-left 0.8s linear;
+
+  @keyframes slide-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .btn {
+    color: $very-dark-cyan;
+  }
+}
+
+.card {
+  max-width: 20rem;
+  margin: 0 auto;
+  padding: 3rem 0;
+  line-height: 1.5;
+
+  .card-content {
+    max-width: 70%;
+    margin: 0 auto;
+
+    img {
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      font-family: "Big Shoulders Display", cursive;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      color: $transparent-white;
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      border: 2px solid $very-light-gray;
+      padding: 0.75rem 2rem;
+      border-radius: 100px;
+      background-color: $very-light-gray;
+
+      &:hover {
+        background-color: transparent;
+        color: $very-light-gray;
+        transition: all 0.3s linear;
+      }
+
+      @include respond(tablet-land) {
+        margin-top: 3rem;
+      }
+    }
+  }
+}

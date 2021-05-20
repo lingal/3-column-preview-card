@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+// Media queries
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == (tablet) {
+    @media (min-width: 568px) {
+      @content;
+    }
+  }
+  @if $breakpoint == (tablet-land) {
+    @media (min-width: 700px) {
+      @content;
+    }
+  }
+  @if $breakpoint == (desktop) {
+    @media (min-width: 1023px) {
+      @content;
+    }
+  }
+}
+
+// Variables
+
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+$transparent-white: hsla(0, 0%, 100%, 0.75);
+$very-light-gray: hsl(0, 0%, 95%);
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 94%; // == 15px
+
+  @include respond(tablet) {
+    font-size: 60%;
+  }
+
+  @include respond(desktop) {
+    font-size: 94%;
+  }
+}
+
+body {
+  background-color: $very-light-gray;
+  font-family: "Lexend Deca", sans-serif;
+  color: $very-light-gray;
+}
+
+a {
+  text-decoration: none;
+}

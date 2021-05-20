@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 94%;
+}
+
+@media (min-width: 568px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (min-width: 1023px) {
+  html {
+    font-size: 94%;
+  }
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Lexend Deca", sans-serif;
+  color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card-1 {
+  background-color: #e38826;
+  animation: slide-right 0.8s linear;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.card-1 .btn {
+  color: #e38826;
+}
+
+.card-2 {
+  background-color: #006970;
+  animation: slide-down 0.8s linear;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.card-2 .btn {
+  color: #006970;
+}
+
+.card-3 {
+  background-color: #004241;
+  animation: slide-left 0.8s linear;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.card-3 .btn {
+  color: #004241;
+}
+
+.card {
+  max-width: 20rem;
+  margin: 0 auto;
+  padding: 3rem 0;
+  line-height: 1.5;
+}
+
+.card .card-content {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.card .card-content img {
+  margin-bottom: 1.5rem;
+}
+
+.card .card-content h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  margin-bottom: 1.5rem;
+}
+
+.card .card-content p {
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.card .card-content .btn {
+  display: inline-block;
+  border: 2px solid #f2f2f2;
+  padding: 0.75rem 2rem;
+  border-radius: 100px;
+  background-color: #f2f2f2;
+}
+
+.card .card-content .btn:hover {
+  background-color: transparent;
+  color: #f2f2f2;
+  transition: all 0.3s linear;
+}
+
+@media (min-width: 700px) {
+  .card .card-content .btn {
+    margin-top: 3rem;
+  }
+}
+
+.main {
+  min-height: 100vh;
+  padding: 3rem 0;
+  display: grid;
+  place-items: center;
+}
+
+@media (min-width: 568px) {
+  .main {
+    padding: 0;
+  }
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+@media (min-width: 568px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/*# sourceMappingURL=main.css.map */
