@@ -13,11 +13,6 @@
       @content;
     }
   }
-  @if $breakpoint ==(large-portrait) {
-    @media (min-width: 768px) and (min-height: 1000px) {
-      @content;
-    }
-  }
   @if $breakpoint == (desktop) {
     @media (min-width: 1023px) {
       @content;
@@ -46,10 +41,6 @@ html {
 
   @include respond(tablet) {
     font-size: 65%;
-  }
-
-  @include respond(large-portrait) {
-    font-size: 100%;
   }
 
   @include respond(desktop) {

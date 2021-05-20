@@ -7,9 +7,6 @@
   @include respond(tablet) {
     padding: 0;
   }
-  @include respond(large-portrait) {
-    padding: 3rem 0;
-  }
 }
 
 .container {
@@ -19,8 +16,5 @@
   @include respond(tablet) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-  }
-  @include respond(large-portrait) {
-    display: block;
   }
 }
