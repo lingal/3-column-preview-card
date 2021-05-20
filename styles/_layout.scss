@@ -3,7 +3,6 @@
   padding: 3rem 0;
   display: grid;
   place-items: center;
-  background-color: red;
 
   @include respond(tablet) {
     padding: 0;
