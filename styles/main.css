@@ -147,7 +147,7 @@ a {
   transition: all 0.3s linear;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1023px) {
   .card .card-content .btn {
     margin-top: 3rem;
   }

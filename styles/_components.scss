@@ -97,7 +97,7 @@
         transition: all 0.3s linear;
       }
 
-      @include respond(tablet-land) {
+      @include respond(desktop) {
         margin-top: 3rem;
       }
     }
