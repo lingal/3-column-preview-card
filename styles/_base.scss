@@ -18,6 +18,11 @@
       @content;
     }
   }
+  @if $breakpoint == (large-desktop) {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
 }
 
 // Variables
@@ -43,8 +48,15 @@ html {
     font-size: 65%;
   }
 
+  @include respond(tablet-land) {
+    font-size: 68%;
+  }
+
   @include respond(desktop) {
-    font-size: 94%;
+    font-size: 98%;
+  }
+  @include respond(large-desktop) {
+    font-size: 110%;
   }
 }
 

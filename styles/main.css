@@ -17,9 +17,21 @@ html {
   }
 }
 
+@media (min-width: 700px) {
+  html {
+    font-size: 68%;
+  }
+}
+
 @media (min-width: 1023px) {
   html {
-    font-size: 94%;
+    font-size: 98%;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 110%;
   }
 }
 
